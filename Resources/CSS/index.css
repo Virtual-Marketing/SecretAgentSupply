@@ -151,6 +151,7 @@ footer {
 .mobile_nav {
   display: none;
 }
+
 /* for mobile screens max-width of 1024px*/
 @media only screen and (max-width: 1024px) {
   nav ul {
@@ -169,7 +170,7 @@ footer {
   }
   }
 
-/* for phone screens mas-width of 470px */
+/* for phone screens max-width of 470px */
 @media only screen and (max-width: 470px) {
   .content {
     top: 10rem;
