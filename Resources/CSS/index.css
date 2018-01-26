@@ -1,0 +1,218 @@
+html,
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  background-color: white;
+  margin: 0
+}
+
+/*style for header section*/
+.container_logo {
+  display: flex;
+  background-color: black;
+  margin: auto;
+  align-items: center;
+  padding-left: 10%;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  }
+
+.container_logo img {
+  height: 1.5rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+.container_logo span {
+  font-size: 1rem
+}
+
+/*style for new arrivals banner section*/
+.container_banner {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.content {
+  font-weight: bold;
+  background-color: black;
+  width: 20rem;
+  position: relative;
+  padding: 2rem 3rem;
+  top: 9rem;
+  left: 10%;
+  line-height: 2rem;
+}
+
+.content h4 {
+  font-size: 1rem;
+  line-height: 2.25rem;
+}
+
+.content h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+/* style for the navigation bar section*/
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:.75rem 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+li {
+  display: list-item;
+}
+
+/*style for the products & company info section*/
+/*in other words...the flexbox nightmare begins here*/
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.pen, .watch, .glasses {
+  width: 30%;
+}
+.product_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+  }
+
+.product_photo img {
+  max-width: 8rem;
+  }
+
+.description  {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: .5rem 0;
+}
+
+.company_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-right: 10%;
+  padding-left: 10%;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .type {
+  display: block;
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.info span {
+  color: black;
+  padding-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: black;
+  padding-left: 10%;
+  text-align: left;
+  color: white;
+  margin-top: 4rem;
+}
+
+.mobile_nav {
+  display: none;
+}
+/* for mobile screens max-width of 1024px*/
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display:none;
+  }
+  .mobile_nav {
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+  }
+  .glasses {
+    display: none;
+  }
+  .pen, .watch {
+    width: 47%;
+  }
+  }
+
+/* for phone screens mas-width of 470px */
+@media only screen and (max-width: 470px) {
+  .content {
+    top: 10rem;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    }
+  .content h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .content h4 {
+    font-size: .77rem;
+    line-height: 1.5rem;
+  }
+  .container_logo {
+    padding-left: 0;
+  }
+  .container_banner {
+    height: 15rem;
+  }
+  .watch {
+    display: none;
+  }
+  .pen {
+    width: 90%;
+  }
+  .product {
+    justify-content: center;
+  }
+  footer {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .company_info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    width: 90%;
+  }
+  .info .type {
+    margin-top: .5rem;
+  }
+}
